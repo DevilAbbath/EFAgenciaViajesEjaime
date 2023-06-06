@@ -52,29 +52,6 @@ footer {
     transition: 1.5s, visibility 1.75s !important;
 }
 
-.loader-hidden {
-    opacity: 0 !important;
-    visibility: hidden !important;
-}
-
-.loader::after {
-    content: "" !important;
-    width: 10rem !important;
-    height: 10rem !important;
-    border: 1.5rem solid wheat;
-    border-top-color: #ff8e3c;
-    border-radius: 50%;
-    animation: loading 1.75s ease infinite;
-}
-
-@keyframes loading {
-    from {
-        transform: rotate(0turn);
-    } to {
-        transform: rotate(1turn);
-    }
-}
-
 .hidden-spacer {
     height: 56px
 }
