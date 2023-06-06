@@ -1,0 +1,130 @@
+body {
+    background-color: rgb(105, 105, 105) !important;
+}
+
+h2 {
+    margin-top: 2rem !important;   
+}
+
+a  {
+    color: white !important;
+}
+
+header {
+    height:60vh;
+    min-height:400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:url("../img/ppalimage.jpg");
+}
+
+label {
+    color:white !important;
+}
+
+footer {
+    background: rgb(255,111,60);
+    background: linear-gradient(90deg, rgba(255,111,60,1) 0%, rgba(255,142,60,1) 35%, rgba(255,167,60,1) 70%, rgba(255,201,60,1) 100%);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: white;
+    margin-top: 3rem;
+}
+
+.container-fluid {
+    padding-top: 1rem;
+}
+
+.div_hiden {
+    display: none;
+}
+
+.loader {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vw !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color:darkgrey !important;
+    transition: 1.5s, visibility 1.75s !important;
+}
+
+.loader-hidden {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+.loader::after {
+    content: "" !important;
+    width: 10rem !important;
+    height: 10rem !important;
+    border: 1.5rem solid wheat;
+    border-top-color: #ff8e3c;
+    border-radius: 50%;
+    animation: loading 1.75s ease infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    } to {
+        transform: rotate(1turn);
+    }
+}
+
+.hidden-spacer {
+    height: 56px
+}
+
+.text-center {
+    color: white !important;
+}
+
+.cardImg{
+    color: white;
+    text-align: center;
+    padding: .5rem 0;
+    background: rgb(255,111,60);
+    background: linear-gradient(90deg, rgba(255,111,60,1) 0%, rgba(255,142,60,1) 35%, rgba(255,167,60,1) 70%, rgba(255,201,60,1) 100%);
+}
+
+.qSomos{
+    background-color: transparent !important;
+}
+
+.col .card {
+    background-color: black;
+}
+
+.card {
+    color: white !important;
+    border: none !important;
+}
+
+#plane{
+    position: relative;
+}
+
+.hideTxt {
+    display: none;
+}
+  
+.showTxt {
+    border: #5cb85c .5rem solid;
+    border-radius: 1rem;
+    transition: 1.5s, visibility 1.75s;
+    animation: appear 1.75s;
+    display: block;
+    margin-top: 1rem;
+}
+
+.success {
+    color: #5cb85c !important;
+}
+
+@keyframes appear {
+    0% {opacity: 0;}
+}
